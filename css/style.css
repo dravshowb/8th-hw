@@ -1,0 +1,144 @@
+/*css c start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+/*css c end*/
+
+/*nav st*/
+
+nav{
+    background-color: #02918b;
+}
+
+nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav .logo{
+    width: 20%;
+}
+
+nav .logo img{
+    display: block;
+}
+
+nav .menu{
+    width: 80%;
+}
+
+nav .menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav .menu ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+    transition: .7s;
+}
+
+nav .menu ul li:hover a{
+    background-color: cfc91d;
+    color: #000;
+}
+
+/*nav st end*/
+
+/*banner st start*/
+
+#banner{
+    background: url(../img/banner.png);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    opacity: .66;
+    z-index: -1;
+}
+
+#banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#banner .content{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+}
+
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#banner p{
+    font-size: 18px;
+}
+
+#banner img{
+    display: block;
+    margin: 50px auto;
+}
+
+#banner a{
+    font-size: 14px;
+    font-weight: 800; 
+    color: #0b1016;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    padding: 19px 42px;
+    display: inline-block;
+}
+
+/* banner st end*/
